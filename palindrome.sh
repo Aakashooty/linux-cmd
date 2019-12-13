@@ -1,4 +1,7 @@
-read -p "Enter a string: " string
-if [[ "$(echo "$string" | rev)" == "$string" ]]; then
+read -p "Enter a string: " s
+if [[ "$(echo "$s" | rev)" == "$s" ]]; then
     echo "Palindrome"
-fi  
+else
+   echo "Not a Palindrome"
+fi
+
